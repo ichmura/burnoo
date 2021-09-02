@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS burnoo */
+
+
+
+.main-screen { 
+	display: flex;
+	justify-content: center;
+}
+
+
+.nav-left-menu { 
+list-style-type: none;
+padding:0px;
+margin-top:60px;
+}
+
+.nav-left-menu > li {
+margin:22px;
+padding-left:30px;
+text-decoration:none;
+}
+
+.left-menu-button {
+text-decoration:none;
+font-family: openSans;
+cursor:pointer;	
+}
+
+.left-menu-button:hover {
+text-decoration:none;
+font-family: openSans;
+cursor:pointer;
+color:#db21a4;
+}
+
+.main-box {
+    background-color: white;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow:0 20px 40px rgba(0,0,0,.1);
+    margin-top: 25px;
+	margin-left:10px;
+	margin-right:10px;
+    height: 100%;
+    width: 580px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+@media only screen and (max-width: 680px) {
+	
+.main-box {
+    width: 580px;
+}
+}
+
+@media only screen and (max-width: 580px) {
+	
+.main-box {
+    width: 520px;
+}
+}
+
+@media only screen and (max-width: 440px) {
+	
+.main-box {
+    width: 420px;
+	margin-top: 5px;
+}
+
+	
+}
+
+.leftSection {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.rightSection {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: #fafafa;
+
+}
+
+.main-box > article {
+    padding: 20px;
+}
+
+h1 { padding-left:30px;	
+}
+
+.main-section {
+width:100%;
+
+}
+
+h1 { font-size: 18px; font-family:openSans; }
+
+
+
+
+.no_image {
+border: none;
+border-radius: 10px;
+max-height:40px; 
+max-width:40px;
+cursor:pointer;
+margin:auto; 
+padding:10px;
+border-radius: 10px;
+
+}
+
+.main_user_image {
+max-height:40px; 
+max-width:40px;
+cursor:pointer;
+margin:auto; 
+border-radius: 6px;
+}
+
+.image_and_name { 
+margin:0px;
+padding:0px;
+display: flex;
+align-items: center;
+align-content: center; 
+
+}
+
+.show_name { 
+margin-top:10px;
+text-align:center;
+cursor:pointer; 
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-content: center;
+align-items: baseline;
+justify-content: center;
+
+}
+
+
+.button_logout {
+	
+	font-size:12px;
+	color:#000;
+	font-family:openSans;
+	text-decoration:none;
+}
+
+.logout_image {
+	
+	height:20px;
+	display: block;
+	padding-left:10px;
+	padding-right:10px;
+	
+}
+
+

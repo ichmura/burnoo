@@ -1,0 +1,1 @@
+<?php include("languages/language_pl.php"); ?>

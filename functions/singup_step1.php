@@ -71,7 +71,7 @@
 
 <div class="signup_input_main">
 <div class="signup_input_left"> Hasło </div> 
-<div class="signup_input_right"> <input id="password" class="signup_input_text" type="text" /> </div>
+<div class="signup_input_right"> <input id="password" class="signup_input_text" type="password"  autocomplete="new-password"/> </div>
 </div>
 
 <div class="signup_button_form"> <input class="signup_button" type="submit" onClick="signup()" value="<?php echo $lang['signup'] ?>" /> </div>

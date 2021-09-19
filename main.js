@@ -6,7 +6,7 @@ function goHome() {
 function set_default_picture(pictureId, thumb) {
 	
 	
-	$("#show_notification").load("functions/set_default_picture.php?picture_id="+pictureId);
+	$("#show_notification").load("/functions/set_default_picture.php?picture_id="+pictureId);
 	
 	$('.my_photo_mini_l').removeClass('my_photo_mini_l').addClass('my_photo_mini');
 	$('#picture_'+pictureId).removeClass('#picture_'+pictureId).addClass('my_photo_mini_l');
@@ -23,7 +23,7 @@ function set_default_picture(pictureId, thumb) {
 function signup_step1(gender) {
 	
   $.ajax({
-  url: "functions/singup_step1.php",
+  url: "/functions/singup_step1.php",
   async: false,
   data: {gender:gender},
   success: function(result){

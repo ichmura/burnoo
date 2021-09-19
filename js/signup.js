@@ -7,7 +7,7 @@ function signup() {
 	let s_city = $('#city').val();
 	let s_gender = $('#my_gender option:selected').val();
 	let s_email = $('#email').val();
-	let s_phone = $('#email').val();
+	let s_phone = $('#phone').val();
 	let s_password = $('#password').val();
 	
   $.ajax({

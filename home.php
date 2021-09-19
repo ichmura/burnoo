@@ -24,8 +24,7 @@
 
 <?php
 include("include/config.php");
-include("header.php");
-?>
+include("header.php"); ?>
 
 <div class="main-screen">
 

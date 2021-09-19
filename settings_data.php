@@ -26,6 +26,12 @@ function save_settings_data() {
 	let d_phone = $('#my_phone_number').val();
 	let d_password = $('#my_password').val();
 	
+	if(d_name === '') {
+	
+	$( "#notification" ).html('Wpisz swoje imię');
+	
+	} else {
+	
   $.ajax({
   url: "functions/save_settings_data.php",
   async: false,
@@ -35,9 +41,17 @@ function save_settings_data() {
   }
   });
 	
-
 		document.getElementById('save_button').style.visibility = 'hidden';
-	
+		
+	}
+}
+
+function change_password() {
+	$('#show_settings').load("settings_password.php");
+}
+
+function change_email() {
+	$('#show_settings').load("settings_email.php");
 }
 
 </script>
@@ -92,7 +106,7 @@ function save_settings_data() {
 
 <div class="data_input_main">
 <div class="data_input_left"> E-mail </div> 
-<div class="data_input_right"> <input onfocus="settings_change()" id="my_email" class="data_input_text" type="text" value="<?php echo $user_info['email']; ?>" /> </div>
+<div class="data_input_right"> <a class="change_email_text" onclick="change_email()" title="Kliknij aby zmienić"> <?php echo $user_info['email']; ?> </a> </div>
 </div>
 
 
@@ -103,14 +117,14 @@ function save_settings_data() {
 
 <div class="data_input_main">
 <div class="data_input_left"> Hasło </div> 
-<div class="data_input_right"> <input onfocus="settings_change()" id="my_password" class="data_input_text" type="text" value="*********" /> </div>
+<div class="data_input_right"> <a class="change_pass_text" onclick="change_password()"> Kliknij aby zmienić </a> </div>
 </div>
-
 
 <div class="data_input_main">
 <div class="data_input_left"> </div> 
 <div class="data_input_right"> <input onfocus="settings_change()" class="save_button" id="save_button" type="submit" onclick="save_settings_data()" value="<?php echo $lang['save'] ?>" /> </div>
 </div>
+
 
 </div>
 

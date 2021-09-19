@@ -20,15 +20,12 @@ if ($_GET['do'] == 'logout' ) { logout(); }
 </head>
 <body>
 
-
-
-    <?php include("header.php"); ?>
+<?php include("header.php"); ?>
 
 <div class="main-screen">
     <main class="main-box">
 
     
-
         <section class="leftSection">
             
             <div class="loginForm">

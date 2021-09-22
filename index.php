@@ -29,7 +29,7 @@ if ($_GET['do'] == 'logout' ) { logout(); }
         <section class="leftSection">
             
             <div class="loginForm">
-                <p class="login_text_long"> Zaloguj się na burnoo: </p>
+                <p class="login_text_long">Zaloguj się na burnoo:</p>
 				<form name="login" method="POST">
                 <p class="login_text"> e-mail: </p>
                 <div> <input class="input_email" name="email" type="text"> </div>
